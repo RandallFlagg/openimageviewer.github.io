@@ -1,7 +1,7 @@
 <div class="container has-text-centered">
-        <section class="section is-small">
+        <!-- <section class="section is-small"> -->
         <div class="columns is-vcentered">
-                    <div class="column is-5 ">
+                    <div class="column is-5 slide-in-left">
                             <h1 class="title is-1">
                                     Open image viewer
                                 </h1>
@@ -24,10 +24,8 @@
                             
                     </div>
                     <div class="column is-6 is-offset-1">
-                                
-                                            <!-- <youtube :video-id="video2"></youtube> -->
                                             
-                <iframe style="border-radius:20px;" width="100%" height="400px" src="https://www.youtube.com/embed/tG5mS4jQW_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  class="movie_shade slide-in-right" style="border-radius:20px;" width="100%" height="100%" src="https://www.youtube.com/embed/tG5mS4jQW_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h2 class="subtitle is-4">    
                                 </h2>
                         
@@ -35,14 +33,14 @@
 
                     </div>
                 </div>
-            </section>
+            <!-- </section> -->
 
                 <div class="container">
                 <div class="columns is-centered">
-
-                        <div class="column is-3" >
-                                <div class="card is-shady">
+                        <div class="column is-3 ">
+                                <div class="card is-shady scale-in delay1">
                                         <div class="card-image has-text-centered">
+                                                <i class="fas fa-bolt" style="color:rgba(48, 48, 219, 0.733);stroke:black;stroke-width: 10;"></i>
                                         </div>
                                         <div class="card-content">
                                             <div class="content">
@@ -55,8 +53,9 @@
                             
                         </div>
                         <div class="column is-3 " >
-                                <div class="card is-shady">
+                                <div class="card is-shady scale-in delay2">
                                         <div class="card-image has-text-centered">
+                                                <i class="fas fa-headphones" style="color:red"></i>
                                         </div>
                                         <div class="card-content">
                                             <div class="content">
@@ -72,12 +71,13 @@
                             
                             </div>
                         <div class="column is-3">
-                                <div class="card is-shady">
+                                <div class="card is-shady scale-in delay3">
                                         <div class="card-image has-text-centered">
-                                        </div>
+                                                <i class="fab fa-github" style="color:green"></i>
+                                            </div>
                                         <div class="card-content">
                                             <div class="content">
-                                                <h4>Open source cross-platform</h4>
+                                                <h5>Open source cross-platform</h5>
                                                 <p>Join our development team to help us making open image viewer even better</p>
                                                 <p><a href="https://github.com/openimageviewer">Vist the source code repository</a></p>
                                             </div>
