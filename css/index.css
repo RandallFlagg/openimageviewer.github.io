@@ -1,7 +1,21 @@
+.delay-half
+{
+     animation-delay:0.5s; 
+}
 .delay1
 {
      animation-delay:1.0s; 
 }
+.delay1-dot4
+{
+     animation-delay:1.4s; 
+}
+
+.delay2-dot0
+{
+     animation-delay:2.0s; 
+}
+
 .delay2
 {
      animation-delay:1.4s; 
@@ -49,4 +63,19 @@
    .is-shady:hover {
   box-shadow: 0 10px 16px 8px rgba(0, 0, 0, .13), 0 6px 6px rgba(0, 0, 0, .19);
   } 
+
+  .is-no-shade {
+   
+     background: #fff;
+     box-shadow: rgba(0, 0, 0, 0) 0 1px 0;
+     border-radius: 0px;
+     display: inline-block;
+     margin: 10px;
+     position: relative;
+     transition: all .1s ease-in-out;
+     } 
   
+     .card-header-title
+     {
+          font-size: larger;
+     }
