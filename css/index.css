@@ -81,3 +81,25 @@
           justify-content: center;
           align-items: center;
      }
+
+   
+    
+
+     ul#ergonomics   
+     {
+          list-style-type: square;
+          color:rgba(192,0, 0, 1.0) 
+     }
+     ul#performance   
+     {
+        /* list-style-type: "\25CE"; */
+          list-style-type: square; 
+          color:rgba(0,120, 0, 1.0) 
+     }
+
+     #listitem
+     {
+          color: black;
+     }
+    
+     
