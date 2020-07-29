@@ -5,8 +5,17 @@ document.addEventListener("DOMContentLoaded", async function (event) {
         {
             'home' : { fileName : 'home-body.html'  , callback : null }
         ,   'about': { fileName : 'about-body.html' , callback : null }
+        ,   'word': { fileName : 'word-body.html' , callback : null }
+        ,   'downloads': { fileName : 'downloads-body.html' , callback : null }
        }
 
+
+    async function ReRegisterLinks()
+    {
+        document.getElementById("word-page").addEventListener("click", function (e) {
+            LoadPage('word', true); // when clicked 'home' in the menu.
+        });
+    }
 
     async function LoadPage(id, pushHistory) 
     {
@@ -23,6 +32,8 @@ document.addEventListener("DOMContentLoaded", async function (event) {
          
         if (MapPages[id].callback != null)
             MapPages[id].callback();
+
+        ReRegisterLinks();
     }
 
     window.onpopstate = function(event) 
@@ -66,6 +77,13 @@ document.addEventListener("DOMContentLoaded", async function (event) {
 
 
     await LoadPage(StartPage, true); // when document is ready load first page
+    
+    /*
+    document.getElementById("downloads").addEventListener("click", function (e) {
+        LoadPage('downloads', true); // when clicked 'about' in the menu.
+    });
+    */
+   
 
     /*
     document.getElementById("aboutPage").addEventListener("click", function (e) {
