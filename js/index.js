@@ -12,9 +12,14 @@ document.addEventListener("DOMContentLoaded", async function (event) {
 
     async function ReRegisterLinks()
     {
-        document.getElementById("word-page").addEventListener("click", function (e) {
-            LoadPage('word', true); // when clicked 'home' in the menu.
-        });
+        let elem = document.getElementById("word-page");
+        if (elem)
+        {
+            document.getElementById("word-page").addEventListener("click", function (e) 
+            {
+                LoadPage('word', true); // when clicked 'home' in the menu.
+            });
+        };
     }
 
     async function LoadPage(id, pushHistory) 
@@ -27,7 +32,13 @@ document.addEventListener("DOMContentLoaded", async function (event) {
         document.getElementById("hero-body").innerHTML = await content.text();
         currentPageId = id;
         if (pushHistory)
-            history.pushState( id , 'hello world', '#' + id);
+        {
+            let historyToken = '';
+            if (id != "home")
+                historyToken = '#' + id;
+            
+            history.pushState( id , 'hello world',historyToken);
+        }
 
          
         if (MapPages[id].callback != null)
