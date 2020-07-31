@@ -6,20 +6,24 @@ document.addEventListener("DOMContentLoaded", async function (event) {
             'home' : { fileName : 'home-body.html'  , callback : null }
         ,   'about': { fileName : 'about-body.html' , callback : null }
         ,   'word': { fileName : 'word-body.html' , callback : null }
+        ,   'features': { fileName : 'features-body.html' , callback : null }
         ,   'downloads': { fileName : 'downloads-body.html' , callback : null }
        }
 
 
     async function ReRegisterLinks()
     {
-        let elem = document.getElementById("word-page");
-        if (elem)
+        for (const key in MapPages)
         {
-            document.getElementById("word-page").addEventListener("click", function (e) 
+            let elem = document.getElementById(key + "-page");
+            if (elem != null)
             {
-                LoadPage('word', true); // when clicked 'home' in the menu.
-            });
-        };
+                elem.addEventListener("click", function (e) 
+                {
+                    LoadPage(key, true); // when clicked 'home' in the menu.
+                });    
+            }
+        }
     }
 
     async function LoadPage(id, pushHistory) 
@@ -44,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async function (event) {
         if (MapPages[id].callback != null)
             MapPages[id].callback();
 
+        window.scrollTo(0,0);
         ReRegisterLinks();
     }
 

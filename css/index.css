@@ -88,18 +88,46 @@
      ul#ergonomics   
      {
           list-style-type: square;
-          color:rgba(192,0, 0, 1.0) 
+          color:rgba(192,0, 0, 1.0);
      }
      ul#performance   
      {
         /* list-style-type: "\25CE"; */
           list-style-type: square; 
-          color:rgba(0,120, 0, 1.0) 
+          color:rgba(0,120, 0, 1.0);
      }
 
      #listitem
      {
-          color: rgb(75,75,75)
+          color: rgb(75,75,75);
      }
-    
-     
+
+     .table thead th
+      { 
+          color: white; 
+          background-color:rgb(50,115,220);
+      }
+      
+      .table tr td
+      {
+           vertical-align: middle;
+           text-align: left;
+      }
+      
+      .table tr:nth-child(even) td:first-child 
+     {
+          font-weight: bold;
+          text-align: center;
+          /* color: rgb(0, 102, 34); */
+          color: rgb(48, 48, 48); 
+          background-color: rgb(179, 200, 230);
+     }
+
+     .table tr:nth-child(odd) td:first-child 
+     {
+          font-weight: bold;
+          text-align: center;
+          color: rgb(48, 48, 48); 
+          /* color: rgb(0, 102, 34); */
+          background-color: rgb(201, 208, 240);
+     }
