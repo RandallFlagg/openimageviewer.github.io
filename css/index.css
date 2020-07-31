@@ -47,8 +47,17 @@
     {
       box-shadow:0.2rem 0.2rem 3rem 0.3rem grey;
       height:  23rem; 
+      border-radius:20px;
+      
     } 
-  
+    .movie-container
+    {
+      overflow:hidden;
+      box-shadow:0.2rem 0.2rem 3rem 0.3rem grey;
+      height:  23rem; 
+      border-radius:20px;
+    } 
+
    .is-shady {
    
   background: #fff;
