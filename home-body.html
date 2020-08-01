@@ -2,28 +2,39 @@
         <div class="columns is-vcentered">
                     <div class="column is-5 slide-in-left">
                             <h1 class="title is-1">
-                                    Open image viewer
+                                    Open Image Viewer
                                 </h1>
-                                <h2 class="subtitle is-3">
+                                
+                                <h2 class="subtitle is-3 has-text-weight-semibold">
                                     Image viewing redefined
                                 </h2>
-                                <a href="https://github.com/OpenImageViewer/OpenImageViewer/releases" class="button is-medium is-link">
-                                        
+                                
+                                <a href="https://github.com/OpenImageViewer/OpenImageViewer/releases" class="button is-large is-link is-rounded">
+                                    <i class="fas fa-chevron-right fa-1x">
+                                    </i>
+                                    <i class="fas fa-chevron-right fa-1x">
+                                    </i>
+                                    <i class="fas fa-chevron-right fa-1x">
+                                    </i>
+                                    <h1>
+                                    &nbsp&nbspDOWNLOAD&nbsp&nbsp
+                                    </h1>
                                     <!-- original size of svg is 88x88-->
                                     <!--
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="35.2" height="35.2" >
                                             
                                             <path transform="scale(0.4)" style="fill:#ffffff;" d="m0,12.402,35.687-4.8602,0.0156,34.423-35.67,0.20313zm35.67,33.529,0.0277,34.453-35.67-4.9041-0.002-29.78zm4.3261-39.025,47.318-6.906,0,41.527-47.318,0.37565zm47.329,39.349-0.0111,41.34-47.318-6.6784-0.0663-34.739z"/>
                                             </svg-->
-                                    <i class="far fa-save fa-2x"></i>
-                                    &nbsp Downloads
-                                </a>
-
-                                <br/>
-                                    
-                                <a href="https://github.com/OpenImageViewer/Nightly-builds" >
+                                            
+                                    <div class="fas fa-download fa-1x"></div>
+                                   
+                                    </a>
+                                    <!-- class="button is-outlined is-small is-nightly-link" -->
+                                 <div style="margin-top:2em;"> 
+                                <a class="is-nightly-link" href="https://github.com/OpenImageViewer/Nightly-builds">
                                      Bleeding edge nightly builds
                                 </a>
+                            </div> 
                     </div>
                     <div class="column is-6 is-offset-1">
                         <div class="movie-container">
@@ -33,21 +44,55 @@
                     </div>
                 </div> <!--Columns-->
 
-                <div class="columns is-centered">
-                    <div class="column is-6">
-                        <div class="button is-medium is-link" id="features-page">
+
+
+                <div class="columns is-centered is-vcentered">
+              
+                    <div class="column is-5">
+                    <button class="button is-info is-medium" style="background-color: rgb(101, 153, 101);">
+                        Version
+                         0.17
+                        Release Date:
+                    </button>
+                </br>
+                    
+              
+                  
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                        </div>
+                        <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                        </div>
+                        <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                        </div>
+                        <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                        </div>
+                    </div>
+              
+                    </div>
+
+                    <div class="column is-7" style="margin-top: 2em;">
+                        <div class="button is-medium is-link is-rounded" id="features-page">
                             <div class="fas fa-meteor fa-2x">
                             </div>
                             &nbsp Feature Highlights
                             </div>
-                     </div>
+                     </div> <!--column-->
                 </div>
 
-            <div class="columns  is-centered">
+            <div class="columns  is-centered" style="margin-top:5em">
                 <div class="column is-6">
                     <div class="card scale-in is-no-shade delayHalf">
                         <div class="card-header">
-                            <div class="card-header-title">
+                            <div class="card-header-title" id="ergonomics-title">
                                 Designed for ergonomics
                          </div>
                     </div>
@@ -79,7 +124,7 @@
 
                     <div class="card scale-in is-no-shade delay1">
                         <div class="card-header">
-                            <div class="card-header-title">
+                            <div class="card-header-title" id="performance-title">
                                 Designed for performance
                          </div>
                     </div>

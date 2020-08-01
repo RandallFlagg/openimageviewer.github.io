@@ -1,15 +1,17 @@
+ import { InitializeTimer } from './clock.js';
+
 document.addEventListener("DOMContentLoaded", async function (event) {
     
     let currentPageId = '';
     const MapPages = 
         {
-            'home' : { fileName : 'home-body.html'  , callback : null }
+            'home' : { fileName : 'home-body.html'  , callback : function() {InitializeTimer();} }
         ,   'about': { fileName : 'about-body.html' , callback : null }
         ,   'word': { fileName : 'word-body.html' , callback : null }
         ,   'features': { fileName : 'features-body.html' , callback : null }
         ,   'downloads': { fileName : 'downloads-body.html' , callback : null }
        }
-
+    
 
     async function ReRegisterLinks()
     {

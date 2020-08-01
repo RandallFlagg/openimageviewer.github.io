@@ -86,13 +86,32 @@
   
      .card-header-title
      {
+          color: rgb(46, 46, 46);
           font-size: larger;
           justify-content: center;
           align-items: center;
+          background-color: rgb(190, 190, 228);
      }
 
-   
-    
+     
+     .card-header-title#ergonomics-title
+     {
+          font-size: larger;
+          justify-content: center;
+          align-items: center;
+          color: rgb(36, 36, 36);
+          background-color: rgb(238, 200, 200);
+     }
+
+
+     .card-header-title#performance-title
+     {
+          font-size: larger;
+          justify-content: center;
+          align-items: center;
+          color: rgb(51, 51, 51);
+          background-color: rgb(157, 199, 150);
+     }
 
      ul#ergonomics   
      {
@@ -139,4 +158,13 @@
           color: rgb(48, 48, 48); 
           /* color: rgb(0, 102, 34); */
           background-color: rgb(201, 208, 240);
+     }
+   
+     .is-nightly-link
+     {
+          border-color: rgb(51, 115, 220);
+            border-style: solid; 
+            border-radius: 2em;
+               border-width: 0.1em;
+            padding : 1%;
      }
