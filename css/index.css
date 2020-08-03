@@ -87,6 +87,7 @@
      .card
      {
           background-color: rgb(64, 64, 64);
+          width: 100%;
      }
   
 
@@ -97,7 +98,7 @@
           font-size: larger;
           justify-content: center;
           align-items: center;
-          background-color: rgb(29, 29, 80);
+          background-color: rgb(36, 36, 51);
      }
 
      
@@ -108,8 +109,20 @@
           justify-content: center;
           align-items: center;
           /* color: rgb(206, 206, 206); */
-          background-color: rgb(20, 68, 17);
+          background-color: rgb(25, 36, 24);
      }
+
+     .productivity-card
+     {
+          background-color: rgb(37, 46, 36) !important;
+     }
+
+     .performance-card
+     {
+          background-color: rgb(58, 36, 36) !important;
+     }
+
+     
 
      /* Performance card title */
      .card-header-title#performance-title
@@ -118,7 +131,7 @@
           justify-content: center;
           align-items: center;
           /* color: rgb(228, 226, 226); */
-          background-color: rgb(122, 17, 17);
+          background-color: rgb(53, 19, 19);
      }
 
      ul#ergonomics   
@@ -287,17 +300,6 @@
           color: rgb(220,220,220) !important;
      }
 
-
-     /* .div
-     {
-          color: rgb(220,220,220);
-     } */
-     
-     /* .hero
-     {
-          color: rgb(220,220,220);
-     } */
-
      #features-page
      {
           margin-top: 2em;
@@ -380,6 +382,10 @@
         } 
 
   
-        
-       
-        
+   
+     
+     .open-source
+     {
+          /* background-color: rgb(214, 236, 140) !important; */
+          color: rgb(226, 139, 40) !important;
+     }
