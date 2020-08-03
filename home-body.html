@@ -1,40 +1,60 @@
 <div class="container has-text-centered">
         <div class="columns is-vcentered">
                     <div class="column is-5 slide-in-left">
-                            <h1 class="title is-1">
+                            <h1 class="title is-1 is-main-title">
                                     Open Image Viewer
                                 </h1>
                                 
-                                <h2 class="subtitle is-3 has-text-weight-semibold">
+                                <h2 class="subtitle is-3 is-main-subtitle has-text-weight-semibold">
                                     Image viewing redefined
                                 </h2>
-                                
-                                <a href="https://github.com/OpenImageViewer/Nightly-builds/raw/master/2020-07-31-v0.16.3/%5B2020-07-31%5D-OIV-0.16-d13a239-Nightly-Win32x64VC-LLVM.7z" target="_blank" download class="button is-large is-link is-rounded">
-                                    <i class="fas fa-chevron-right fa-1x">
-                                    </i>
-                                    <i class="fas fa-chevron-right fa-1x">
-                                    </i>
-                                    <i class="fas fa-chevron-right fa-1x">
-                                    </i>
-                                    <h1>
+                                <a class="button is-large is-link is-download-link" href="https://github.com/OpenImageViewer/Nightly-builds/raw/master/2020-07-31-v0.16.3/%5B2020-07-31%5D-OIV-0.16-d13a239-Nightly-Win32x64VC-LLVM.7z" target="_blank" download>
+                                    <i class="fas fa-chevron-right fa-1x is-inline" ></i>
+                                    <i class="fas fa-chevron-right fa-1x is-inline"></i>
+
+                                    <!-- <span class="icon">
+                                        <i class="fas fa-chevron-right fa-1x"></i>
+                                      </span>
+                                      <span class="icon">
+                                        <i class="fas fa-chevron-right fa-1x"></i>
+                                      </span>
+                                      <span class="icon">
+                                        <i class="fas fa-chevron-right fa-1x"></i>
+                                      </span> -->
+                                    <!-- <span class="fas fa-chevron-right fa-1x" style="display: inline-block;">
+                                    </span>
+                                    <span class="fas fa-chevron-right fa-1x" style="display: inline-block;">
+                                    </span> -->
+                                    <!-- <i class="fas fa-chevron-right fa-1x" style="display: inline-block;">
+                                    </i> -->
+                                    <!-- <h4 class="title is-4 is-inline"> -->
                                     &nbsp&nbspDOWNLOAD v0.16&nbsp&nbsp
-                                    </h1>
+                                    <!-- </h4> -->
+                               
+                                    
                                     <!-- original size of svg is 88x88-->
                                     <!--
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="35.2" height="35.2" >
                                             
                                             <path transform="scale(0.4)" style="fill:#ffffff;" d="m0,12.402,35.687-4.8602,0.0156,34.423-35.67,0.20313zm35.67,33.529,0.0277,34.453-35.67-4.9041-0.002-29.78zm4.3261-39.025,47.318-6.906,0,41.527-47.318,0.37565zm47.329,39.349-0.0111,41.34-47.318-6.6784-0.0663-34.739z"/>
                                             </svg-->
-                                            
-                                    <div class="fas fa-download fa-1x"></div>
+                                    <i class="fas fa-download fa-1x is-inline"></i>
                                    
                                     </a>
+                                
                                     <!-- class="button is-outlined is-small is-nightly-link" -->
-                                 <div style="margin-top:2em;"> 
+                                 <div style="margin-top:1em;"> 
                                 <a class="is-nightly-link" href="https://github.com/OpenImageViewer/Nightly-builds">
-                                     Bleeding edge nightly builds
+                                     Download bleeding edge nightly builds
                                 </a>
                             </div> 
+
+                            <div class="button is-medium is-success is-rounded" id="features-page">
+                                <div class="fas fa-table fa-2x">
+                                </div>
+                                &nbsp Feature Chart
+                                </div>
+                                
                     </div>
                     <div class="column is-6 is-offset-1">
                         <div class="movie-container">
@@ -48,7 +68,7 @@
 
                 <div class="columns is-centered is-vcentered">
               
-                    <div class="column is-5">
+                    <!-- <div class="column is-5">
                         <div  style="border-color:rgb(101, 153, 101) ; background-color: rgb(101, 153, 101);border-style: solid;border-radius: 3em;">
                     <button class="button is-info is-medium" style="background-color: rgb(101, 153, 101);">
                         Version
@@ -79,15 +99,11 @@
                     </div>
                 </div>
               
-                    </div>
-
+                    </div> -->
+<!-- 
                     <div class="column is-7" style="margin-top: 2em;">
-                        <div class="button is-medium is-link is-rounded" id="features-page">
-                            <div class="fas fa-meteor fa-2x">
-                            </div>
-                            &nbsp Feature Highlights
-                            </div>
-                     </div> <!--column-->
+                     
+                     </div> column -->
                 </div>
 
             <div class="columns  is-centered" style="margin-top:5em">
@@ -95,23 +111,16 @@
                     <div class="card scale-in is-no-shade delayHalf">
                         <div class="card-header">
                             <div class="card-header-title" id="ergonomics-title">
-                                Designed for ergonomics
+                                Productivity
                          </div>
                     </div>
                             <div class="card-content has-text-weight-semibold">
-                                <div class="content has-text-left">
-
+                                <div class="content has-text-left is-size-5">
 
                                 <ul id="ergonomics">
-                                    <li><e id="listitem">Use of low level input API to minimize mouse movements</e></li>
-                                    <li><e id="listitem">Zoom sense™ for minimizing mouse wheel finger gestures</e></li>
-                                    <li><e id="listitem">Four transparency modes to minimize eye strain</e></li>
-                                    <li><e id="listitem">Dynamic virtual canvas limits for placing any texel on any position on the screen</e></li>
-                                    <li><e id="listitem">Pixel grid for easily identifying distinct pixels</e></li>
-                                    <li><e id="listitem">Two color checkered background to identify the edges of the images</e></li>
-                                    <li><e id="listitem">No delay or animation when changing view, for immediate response</e></li>
-                                    <li><e id="listitem">Configurable key bindings using an external JSON file</e></li>
-                                    <!--li>Text display duration is variable according to its length.</li-->
+                                    <li><e id="listitem" class="has-text-weight-bold" style="background-color: rgb(200, 188, 138);color: rgb(65, 65, 65);">Free and open source</e></li>
+                                    <li><e id="listitem">Innovative features </e></li>
+                                    <li><e id="listitem">Superb human–computer interaction</e></li>
                                   </ul>
                                 </div>
                             </div>
@@ -127,22 +136,15 @@
                     <div class="card scale-in is-no-shade delay1">
                         <div class="card-header">
                             <div class="card-header-title" id="performance-title">
-                                Designed for performance
+                                Performance
                          </div>
                     </div>
                             <div class="card-content has-text-weight-semibold">
-                                <div class="content has-text-left">
+                                <div class="content has-text-left is-size-5">
                                 <ul id="performance">
-                                    
-                                    <li><e id="listitem">Fully hardware accelerated by using low level graphics and input API</e></li>
-                                    <li><e id="listitem">Custom shaders for every generated pixel</e></li>
-                                    <li><e id="listitem">Built from scratch using modern C++20 techniques</e></li>
-                                    <li><e id="listitem">Lightweight with minimum external dependencies</e></li>
-                                    <li><e id="listitem">Uses specialized codecs for fastest implementation e.g. TurboJPG</e></li>
-                                    <li><e id="listitem">C API interface for integrating with any application</e></li>
-                                    <li><e id="listitem">Extensible design, very easy to create a new Codec.</e></li>
-                                    <li><e id="listitem">Designed for any platform</e></li>
-                                    <li><e id="listitem">Profiling and optimizing on a daily basis</e></li>
+                                    <li><e id="listitem">Unparalleled speed, written in C++20 </e></li>
+                                    <li><e id="listitem">Highest development standards</e></li>
+                                    <li><e id="listitem">Brought to you by industry professionals</e></li>
                                     <!--li>Text display duration is variable according to its length.</li-->
                                   </ul>
                                 </div>
@@ -226,7 +228,7 @@
                         <div class="column is-3 ">
                                 <div class="card is-shady scale-in delay1">
                                         <div class="card-image has-text-centered">
-                                                <i class="fas fa-envelope-open-text" style="color:rgba(48, 48, 219, 0.733);stroke:black;stroke-width: 10;"></i>
+                                                <i class="fas fa-envelope-open-text" style="color:rgba(44, 44, 163, 0.733);stroke:black;stroke-width: 10;"></i>
                                         </div>
                                         <div class="card-content">
                                             <div class="content">
@@ -241,7 +243,7 @@
                         <div class="column is-3 " >
                                 <div class="card is-shady scale-in delay2">
                                         <div class="card-image has-text-centered">
-                                                <i class="fas fa-headphones" style="color:red"></i>
+                                                <i class="fas fa-headphones" style="color:rgb(151, 37, 37)"></i>
                                         </div>
                                         <div class="card-content">
                                             <div class="content">
@@ -259,7 +261,7 @@
                         <div class="column is-3">
                                 <div class="card is-shady scale-in delay3">
                                         <div class="card-image has-text-centered">
-                                                <i class="fab fa-github" style="color:green"></i>
+                                                <i class="fab fa-github" style="color:rgb(30, 114, 30)"></i>
                                             </div>
                                         <div class="card-content">
                                             <div class="content">

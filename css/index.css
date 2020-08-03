@@ -45,7 +45,7 @@
   
      .movie_shade
     {
-      box-shadow:0.2rem 0.2rem 3rem 0.3rem grey;
+      box-shadow:0.2rem 0.2rem 3rem 0.3rem rgb(15, 15, 15);
       height:  23rem; 
       border-radius:20px;
       
@@ -53,7 +53,7 @@
     .movie-container
     {
       overflow:hidden;
-      box-shadow:0.2rem 0.2rem 3rem 0.3rem grey;
+      box-shadow:0.2rem 0.2rem 3rem 0.3rem rgb(15, 15, 15);
       height:  23rem; 
       border-radius:20px;
     } 
@@ -83,88 +83,303 @@
      position: relative;
      transition: all .1s ease-in-out;
      } 
+
+     .card
+     {
+          background-color: rgb(64, 64, 64);
+     }
   
+
+     /* General card titile */
      .card-header-title
      {
-          color: rgb(46, 46, 46);
+          color: rgb(190, 190, 190);
           font-size: larger;
           justify-content: center;
           align-items: center;
-          background-color: rgb(190, 190, 228);
+          background-color: rgb(29, 29, 80);
      }
 
      
+     /* Ergonomics car title */
      .card-header-title#ergonomics-title
      {
           font-size: larger;
           justify-content: center;
           align-items: center;
-          color: rgb(36, 36, 36);
-          background-color: rgb(238, 200, 200);
+          /* color: rgb(206, 206, 206); */
+          background-color: rgb(20, 68, 17);
      }
 
-
+     /* Performance card title */
      .card-header-title#performance-title
      {
           font-size: larger;
           justify-content: center;
           align-items: center;
-          color: rgb(51, 51, 51);
-          background-color: rgb(157, 199, 150);
+          /* color: rgb(228, 226, 226); */
+          background-color: rgb(122, 17, 17);
      }
 
      ul#ergonomics   
      {
           list-style-type: square;
-          color:rgba(192,0, 0, 1.0);
+          color:rgb(32, 182, 32);
      }
      ul#performance   
      {
         /* list-style-type: "\25CE"; */
           list-style-type: square; 
-          color:rgba(0,120, 0, 1.0);
+          color:rgb(221, 25, 25);
      }
 
      #listitem
      {
-          color: rgb(75,75,75);
+          color: rgb(220,220,220);
      }
 
      .table thead th
       { 
-          color: white; 
-          background-color:rgb(50,115,220);
+          color: rgb(204, 204, 204); 
+          background-color:rgb(13, 52, 110);
       }
       
       .table tr td
       {
            vertical-align: middle;
            text-align: left;
+           color: rgb(199, 200, 199);
+           background-color: rgb(70, 69, 69);
       }
       
+      .table tr td:first-child 
+     {
+          font-weight: normal;
+          text-align: center;
+          background-color: rgb(43, 43, 87);
+          color: rgb(194, 194, 194); 
+          font-weight : 600;
+           
+          /* color: rgb(0, 102, 34); */
+          /* color: rgb(167, 166, 166); 
+          background-color: rgb(25, 26, 75); */
+     }
+
+     .table tr:nth-child(even)  td
+     {
+          background-color: rgb(54, 54, 54); 
+          color: rgb(192, 192, 192); 
+          /* font-weight: bold; */
+          /* text-align: center; */
+          
+     }
+
       .table tr:nth-child(even) td:first-child 
      {
-          font-weight: bold;
           text-align: center;
-          /* color: rgb(0, 102, 34); */
-          color: rgb(48, 48, 48); 
-          background-color: rgb(179, 200, 230);
+          background-color: rgb(25, 26, 75); 
      }
+
+
+     .is-main-title 
+     {
+
+          /* background-image: linear-gradient(to right, #f22, #f2f 14.25%, #22f 28.5%, #2ff 42.75%, #2f2 57%, #2f2 71.25%, #ff2 85.5%, #f22); */
+          color: rgb(204, 151, 102) !important;
+          stroke-width: 20px !important;
+          text-shadow: 2px 2px black !important;
+          
+      }
+
+        .is-main-subtitle 
+     {
+
+          /* background-image: linear-gradient(to right, #f22, #f2f 14.25%, #22f 28.5%, #2ff 42.75%, #2f2 57%, #2f2 71.25%, #ff2 85.5%, #f22); */
+          color: rgb(139, 126, 123) !important;
+        }
+
 
      .table tr:nth-child(odd) td:first-child 
      {
-          font-weight: bold;
+          /* font-weight: bold; */
           text-align: center;
-          color: rgb(48, 48, 48); 
+          /* color: rgb(194, 194, 194); 
+          background-color: rgb(51, 25, 75); */
           /* color: rgb(0, 102, 34); */
-          background-color: rgb(201, 208, 240);
+          /* background-color: rgb(13, 11, 36); */
      }
+
+
    
+     .is-download-link
+     {
+          color: rgb(155, 155, 155) !important;
+          background-color: rgb(17, 17, 17) !important;
+          /* width: 10em; */
+          /* max-width: 60vw; */
+          /* width: 14em; */
+     }
+
+     .is-download-link:hover
+     {
+          color: rgb(216, 217, 218) !important;
+          background-color: rgb(98, 62, 14) !important;
+     }
+
      .is-nightly-link
      {
-          border-color: rgb(51, 115, 220);
-            border-style: solid; 
-            border-radius: 2em;
-               border-width: 0.1em;
-            padding : 1%;
+          /* margin-top: 2em !important; */
+          /* border-color: rgb(51, 115, 220); */
+            /* border-style: solid;  */
+            /* border-radius: 2em; */
+               /* border-width: 0.1em; */
+            /* padding : 1%; */
      }
+
+     body
+     {
+          background-color: rgb(48, 48, 48);
+     }
+
+     .title
+     {
+          color: rgba(220,220,220);
+     }
+
+     .subtitle
+     {
+          color: rgba(180,180,180);
+     }
+
+     .hero
+     {
+          color: rgb(220,220,220);
+     }
+
+     .card card-content
+     {
+          color: rgb(220,220,220) !important;
+     }
+     
+     .card-content
+     {
+          color: rgb(220,220,220) !important;
+     }
+
+     .card-content content
+     {
+          color: rgb(220,220,220) !important
+     }
+
+     content
+     {
+          color: rgb(220,220,220);
+     }
+
+
+     h4
+     {
+          color: rgb(220,220,220) !important;
+     }
+
+     h5
+     {
+          color: rgb(220,220,220) !important;
+     }
+
+
+     /* .div
+     {
+          color: rgb(220,220,220);
+     } */
+     
+     /* .hero
+     {
+          color: rgb(220,220,220);
+     } */
+
+     #features-page
+     {
+          margin-top: 2em;
+          background-color: rgb(128, 65, 13)
+     }
+
+     a
+     {
+          color: rgb(216, 216, 216)
+     }
+
+     a:hover
+     {
+          color: rgb(74, 117, 199);
+          /* background-color: rgb(50, 89, 195); */
+
+     }
+
+     @font-face {
+          font-family: myFirstFont;
+          src: url(../resources/impact.woff);
+        }
+
+        .is-logo
+        {
+          margin-left: 0.3em;
+          font-family: myFirstFont;
+          color:rgb(104, 104, 100);
+          text-shadow: 2px 2px  black; 
+          font-size: min(5.1vw,15pt);
+          letter-spacing: .3em;
+          font-stretch: semi-expanded;
+          /* <!-- <img src="./resources/OIVPageLogo.png" style="min-width:200px;max-width:70vw" alt="Logo" height="auto"/> --> */
+        }
+
+        .navbar-item:hover#logo
+        {
+             background-color: transparent !important
+        }
+
+        .navbar-link
+        {
+             color: rgb(224, 224, 224) !important;
+             background-color:transparent!important;
+        }
+
+        .navbar-link:hover
+        {
+             background-color: rgb(112, 64, 18) !important;
+        }
+
+        .navbar-item
+        {
+          color: rgb(224, 224, 224) !important;
+          background-color: transparent !important;
+        }
+        
+        .navbar-item:hover
+        {
+          color: rgb(224, 224, 224) !important;
+          background-color: rgb(112, 64, 18) !important;
+        }
+
+         .navbar-dropdown
+        {
+          color: rgb(224, 224, 224) !important;
+          background-color: rgb(73, 73, 73) ;
+          border-top: 2px solid rgb(41, 41, 41)
+        }
+
+         .navbar-menu
+        {
+             background-color: transparent;
+        }
+
+        html
+        {
+               background-color: transparent ;
+             /* background-color: purple ; */
+        } 
+
+  
+        
+       
+        
