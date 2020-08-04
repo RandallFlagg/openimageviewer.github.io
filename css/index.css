@@ -153,44 +153,45 @@
 
      .table thead th
       { 
-          color: rgb(204, 204, 204); 
-          background-color:rgb(13, 52, 110);
+          color: rgb(199, 197, 197); 
+          background-color:rgb(88, 66, 41);
       }
       
       .table tr td
       {
            vertical-align: middle;
            text-align: left;
-           color: rgb(199, 200, 199);
+           color: rgb(219, 219, 219);
            background-color: rgb(70, 69, 69);
       }
-      
+     
+      /* First child of table any row*/
       .table tr td:first-child 
      {
           font-weight: normal;
           text-align: center;
-          background-color: rgb(43, 43, 87);
-          color: rgb(194, 194, 194); 
+          background-color: rgb(37, 37, 51);
+          color: rgb(212, 209, 209); 
           font-weight : 600;
            
           /* color: rgb(0, 102, 34); */
           /* color: rgb(167, 166, 166); 
           background-color: rgb(25, 26, 75); */
      }
-
+     /* Any child any row */
      .table tr:nth-child(even)  td
      {
           background-color: rgb(54, 54, 54); 
-          color: rgb(192, 192, 192); 
+          color: rgb(214, 214, 214); 
           /* font-weight: bold; */
           /* text-align: center; */
           
      }
-
+     /* First child of table Even row*/
       .table tr:nth-child(even) td:first-child 
      {
           text-align: center;
-          background-color: rgb(25, 26, 75); 
+          background-color: rgb(35, 45, 47); 
      }
 
 
