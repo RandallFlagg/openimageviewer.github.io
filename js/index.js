@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", async function (event) {
         
         const content = await fetch(MapPages[id].fileName);
 
+        gtag('event', 'page_view', {
+            // page_title: '<Page Title>',
+            // page_location: '<Page Location>',
+            page_path: '/' + id
+            ,send_to: 'UA-132326144-1'
+          });
+
+
         document.getElementById("hero-body").innerHTML = await content.text();
         currentPageId = id;
         if (pushHistory)
