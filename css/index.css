@@ -84,8 +84,13 @@
      transition: all .1s ease-in-out;
      } 
 
+     .card-header
+     {
+          box-shadow: none !important ;
+     }
      .card
      {
+          box-shadow:0.2rem 1.2rem 3rem 0.1rem rgb(32, 32, 32);
           background-color: rgb(64, 64, 64);
           width: 100%;
      }
@@ -120,7 +125,7 @@
      .performance-card
      {
           background-color: rgb(58, 36, 36) !important;
-     }
+     } 
 
      
 
@@ -268,6 +273,21 @@
      .hero
      {
           color: rgb(220,220,220);
+     }
+
+
+     .card
+     {
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+     }
+
+     .card .card-header-title
+     {
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
      }
 
      .card card-content
@@ -427,3 +447,51 @@
              font-size: 1.2em;
              letter-spacing: 0.15em;
         }
+	
+   .bitcoin
+   {
+        margin-top :2em;
+        margin-bottom :1em;
+        align-items: center;
+        text-align: center;
+     }
+   .bitcoin-icon-wrap
+   {
+          position: relative;
+          border-radius:80px;
+          border-right:3px solid #050505; 
+          border-top:3px solid #050505; 
+          border-bottom:3px solid #050505; 
+          left:20px;
+          background-color: #f9a644;
+   }
+   
+   .bitcoin-icon{
+        color: #000000;
+        border-radius:100px;
+        background-color: #f9a644;
+     }
+   .bitcoin-text
+   {
+        font-size:0.85em;
+        border-top-right-radius:20px;
+        border-bottom-right-radius:20px;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        border:1px solid #505050;
+        background-color:#2e2e2e;
+        vertical-align: middle !important;
+        align-items: center !important;
+        justify-content:center;
+        height: 2.8em;
+     }
+
+     .bitcoin-address-text
+     {
+          letter-spacing: -1px;
+     }
+
+    footer
+    {
+         background-color:#090909;
+     }
