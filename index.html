@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Open image viewer | image viewing redefined</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Open Image Viewer is a high performance, innovative and light-weight open source image viewer.">
-    <title>Open image viewer | image viewing redefined</title>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132326144-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-132326144-1');
-</script>
-    <!-- End Google Analytics -->
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="./css/animations.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/clock.css" />
@@ -26,38 +17,45 @@
     <link rel="icon" type="image/svg+xml" href="./resources/VectorIcon.svg">
     <link rel="alternate icon" type="image/png" href="./resources/favicon-16x16.png" sizes="16x16">
     <link rel="alternate icon" type="image/png" href="./resources/favicon-32x32.png" sizes="32x32">
-
-<!--Safari specific-->
+    <!--Safari specific-->
     <!--link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff8a01"-->
     <!--link rel="icon" type="image/png" href="./resources/favicon-96x96.png" sizes="96x96"-->
-    <script type="module" src="./js/clock.js"></script>    
-    <script type="module" src="./js/index.js"></script>
-</head>
-<body>
-    <section class="hero is-fullheight is-default is-bold" >
-        <header class="hero-head" >
-            <nav class="navbar" >
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" id="logo" href="/" >
-                            <img src="./resources/VectorIcon.svg" alt="Logo" height="auto"/> 
-                            <div class="is-logo">
-                            <d class="is-logo">
-                                OPEN IMAGE VIEWER
-                            </d>
-                        </div>
 
-                            <!-- <img src="./resources/OIVPageLogo.png" style="min-width:200px;max-width:70vw" alt="Logo" height="auto"/> -->
-                        </a>
-                        <span class="navbar-burger burger" data-target="navbarMenu">
-                            <span style="color: red; font-weight: bolder;height: 1px;" ></span>
-                            <span style="color: green;font-weight: bolder;height: 2px" ></span>
-                            <span style="color: blue;font-weight: bolder !important;height: 2px" ></span>
+    <script type="module" src="./js/clock.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132326144-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-132326144-1');
+    </script>
+    <!-- End Google Analytics -->
+</head>
+
+<body class="hero is-fullheight is-default is-bold">
+    <header class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" id="logo" href="/">
+                        <img src="./resources/VectorIcon.svg" alt="Logo" />
+                        <span class="is-logo">
+                            OPEN IMAGE VIEWER
                         </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-start">
-                            <!--a id="home-page" class="navbar-item is-active">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span style="color: red; font-weight: bolder;height: 1px;"></span>
+                        <span style="color: green;font-weight: bolder;height: 2px"></span>
+                        <span style="color: blue;font-weight: bolder !important;height: 2px"></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <!--a id="home-page" class="navbar-item is-active">
                                 Home
                             </a>
                             
@@ -65,56 +63,72 @@
                                 Code repository
                             </a-->
 
-                            <!--a id="aboutPage" class="navbar-item">
+                        <!--a id="aboutPage" class="navbar-item">
                                 About
                             </a-->
-                            <a class="navbar-item" href="#">
+                        <a class="navbar-item" href="#">
                             <!--a class="navbar-item" href="http://forum.openimageviewer.com"-->
-                                Forum (soon)
+                            Forum (soon)
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Contact
                             </a>
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                    Contact
-                                </a>
-                                <div class="navbar-dropdown">
-                                    <!--a class="navbar-item" href="mailto:support@openimageviewer.com">
+                            <div class="navbar-dropdown">
+                                <!--a class="navbar-item" href="mailto:support@openimageviewer.com">
                                         Email
                                     </a-->
-                                    <a href="https://discordapp.com/invite/k9EfBHQ" class="navbar-item">
-                                        Discord
-                                    </a>
-                                    <a href="https://t.me/joinchat/GkYvy0gPEpGGFFhwhMa_4g" class="navbar-item">
-                                        Telegram
-                                    </a>
-                                    <a href="mailto:openimageviewer@gmail.com" class="navbar-item">
-                                        Email (openimageviewer@gmail.com)
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UCwJk4KvwVzevZUuvlaDCvKQ" class="navbar-item">
-                                        YouTube
-                                    </a>
-                                </div>
+                                <a href="https://discordapp.com/invite/k9EfBHQ" class="navbar-item">
+                                    Discord
+                                </a>
+                                <a href="https://t.me/joinchat/GkYvy0gPEpGGFFhwhMa_4g" class="navbar-item">
+                                    Telegram
+                                </a>
+                                <a href="mailto:openimageviewer@gmail.com" class="navbar-item">
+                                    Email (openimageviewer@gmail.com)
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCwJk4KvwVzevZUuvlaDCvKQ" class="navbar-item">
+                                    YouTube
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-                 <section id="hero-body" class="hero-body">
-                 </section>
-                
-                    <footer class="hero-foot is-centered has-text-centered">
-                        <div class="bitcoin">
-                            <div class= "is-inline-flex" >
-                                <d class="bitcoin-icon-wrap">
-                            <d class="bitcoin-icon px-1 py-1 is-inline-flex"><i class="fab fa-bitcoin fa-2x"></i></d>
-                        </d>
-                            <d class="bitcoin-text mt-1 px-5 is-inline-flex">Bitcoin Donate:&nbsp
-                            <a  href="bitcoin:bc1qlj3evued99rqk8etjfc7kzh956rs2m9zkk577v"><span class="bitcoin-address-text"> bc1qlj3evued99rqk8etjfc7kzh956rs2m9zkk577v</span> </a></d>
-                            </div>
-                        </div>                            
-                            Copyright © Open image viewer 2020. All rights reserved <br/> <span style="font-size: 0.8em;background-color: rgb(22, 22, 22);"><a href="https://github.com/TheNicker">design by Demetrius Flavius </a></span>
-                    </footer>
-    </section>
+    <main id="hero-body" class="hero-body">
+    </main>
+
+    <footer class="hero-foot is-centered has-text-centered my-footer">
+        <div class="bitcoin">
+            <div class="is-inline-flex">
+                <a href="https://opensea.io/nakedart" class="navbar-item"
+                    style="color: rgb(9,9,9) !important; margin-left: -6em;">
+                    Naked Art on OpenSea
+                </a>
+                <span class="bitcoin-icon-wrap">
+                    <span class="bitcoin-icon px-1 py-1 is-inline-flex fab fa-bitcoin fa-2x"></span>
+                </span>
+                <span class="bitcoin-text mt-1 px-5 is-inline-flex">Bitcoin Donate:&nbsp;
+                    <a href="bitcoin:bc1qlj3evued99rqk8etjfc7kzh956rs2m9zkk577v">
+                        <span class="bitcoin-address-text">bc1qlj3evued99rqk8etjfc7kzh956rs2m9zkk577v</span>
+                    </a>
+                </span>
+                <a href="https://naked-art.world/" class="navbar-item" style="color: rgb(9,9,9) !important;">
+                    Naked Art
+                </a>
+            </div>
+        </div>
+        <div>
+            <span>Copyright © Open Image Viewer 2018-2022. All rights reserved.</span>
+            <br />
+            <span style="font-size: 0.8em;background-color: rgb(22, 22, 22);">
+                <a href="https://github.com/TheNicker">design by Demetrius Flavius</a>
+            </span>
+        </div>
+    </footer>
 </body>
+
 </html>
