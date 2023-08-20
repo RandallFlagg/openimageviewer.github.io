@@ -22,6 +22,7 @@
     <!--link rel="icon" type="image/png" href="./resources/favicon-96x96.png" sizes="96x96"-->
 
     <script type="module" src="./js/clock.js"></script>
+    <script type="module" src="./js/date.js"></script>    
     <script type="module" src="./js/index.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132326144-1"></script>
@@ -104,10 +105,6 @@
     <footer class="hero-foot is-centered has-text-centered my-footer">
         <div class="bitcoin">
             <div class="is-inline-flex">
-                <a href="https://opensea.io/nakedart" class="navbar-item"
-                    style="color: rgb(9,9,9) !important; margin-left: -6em;">
-                    Naked Art on OpenSea
-                </a>
                 <span class="bitcoin-icon-wrap">
                     <span class="bitcoin-icon px-1 py-1 is-inline-flex fab fa-bitcoin fa-2x"></span>
                 </span>
@@ -116,13 +113,10 @@
                         <span class="bitcoin-address-text">bc1qlj3evued99rqk8etjfc7kzh956rs2m9zkk577v</span>
                     </a>
                 </span>
-                <a href="https://naked-art.world/" class="navbar-item" style="color: rgb(9,9,9) !important;">
-                    Naked Art
-                </a>
             </div>
         </div>
         <div>
-            <span>Copyright © Open Image Viewer 2018-2022. All rights reserved.</span>
+            <span>Copyright © Open Image Viewer 2018 - <span id="date-container"></span>. All rights reserved.</span>
             <br />
             <span style="font-size: 0.8em;background-color: rgb(22, 22, 22);">
                 <a href="https://github.com/TheNicker">design by Demetrius Flavius</a>

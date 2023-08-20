@@ -1,7 +1,9 @@
  import { InitializeTimer } from './clock.js';
+ import {updateDate} from './date.js';
 
 document.addEventListener("DOMContentLoaded", async function (event) {
     
+    updateDate();
     let currentPageId = '';
     const MapPages = 
         {
